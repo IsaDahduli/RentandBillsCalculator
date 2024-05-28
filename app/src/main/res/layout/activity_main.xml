@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="#050505">
+
+    <TextView
+            android:text="Enter House Rent: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_house_rent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+            android:text="Enter Electricity Bills: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_electricity_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+            android:text="Enter Heating Bills: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_heating_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+            android:text="Enter Water Bills: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_water_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+            android:text="Enter Internet Bill: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_internet_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+            android:text="Enter Number of residents: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_residents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+            android:text="Rent Divided among residents: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_rent_among_residents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    <TextView
+            android:text="Bills total: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_bills_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    <TextView
+            android:text="Bills among residents: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    <EditText
+            android:id="@+id/edit_text_bills_divided"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    <Button
+            android:id="@+id/button_calculate_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Calculate"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:background="#0048ff"/>
+
+</LinearLayout>
+
+</ScrollView>
